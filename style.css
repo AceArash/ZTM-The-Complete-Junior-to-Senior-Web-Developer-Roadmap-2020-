@@ -1,0 +1,137 @@
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-left: 8px;
+}
+
+.wrapper {
+    perspective: 400px;
+    width: 100%;
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    transition: transform 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    padding: 5px;
+}
+
+.box p {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.translate-x {
+    background-color: dodgerblue;
+}
+
+.translate-x:hover {
+    transform: translateX(500px);
+}
+
+.translate-y {
+    background-color: coral;
+}
+
+.translate-y:hover {
+    transform: translateY(250px);
+}
+
+.translate-xy {
+    background-color: teal;
+}
+
+.translate-xy:hover {
+    transform: translate(500px, -250px);
+}
+
+.scale-xy-shrink {
+    background-color: pink;
+}
+
+.scale-xy-shrink:hover {
+    transform: scale(0.5);
+}
+
+.scale-xy-grow {
+    background-color: turquoise;
+}
+
+.scale-xy-grow:hover {
+    transform: scale(1.5);
+}
+
+.rotate {
+    background-color: tomato;
+}
+
+.rotate:hover {
+    transform: rotate(360deg);
+    /*  Below are other acceptable units  */
+    /*   transform: rotate(1turn); */
+    /*   transform: rotate(400grad); */
+}
+
+.rotate-hinge {
+    background-color: steelblue;
+}
+
+.rotate-hinge:hover {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    /* Below will do the same   */
+    /*   transform-origin: 0% 0%; */
+    /*   transform-origin: 0px 0px; */
+}
+
+.rotate-flip {
+    background-color: mediumslateblue;
+}
+
+.rotate-flip:hover {
+    transform: rotateY(180deg);
+}
+
+
+.skew {
+    background-color: gold;
+}
+
+.skew:hover {
+    transform: skew(-30deg, -60deg)
+}
+
+.translate-3d-forward {
+    background-color: gray;
+}
+
+.translate-3d-forward:hover {
+    transform: translateZ(200px);
+}
+
+.translate-3d-back {
+    background-color: darkmagenta;
+}
+
+.translate-3d-back:hover {
+    transform: translateZ(-200px);
+}
+
+.translate-3d-beyond {
+    background-color: black;
+}
+
+.translate-3d-beyond:hover {
+    transform: translateZ(500px);
+}
